@@ -1,5 +1,15 @@
 /* resets and general styles */
 
+.slick-slider {
+  width: 88%;
+  margin: auto;
+  background: rgb(14, 13, 13);
+}
+
+
+
+
+
 *{
 	margin: 0 auto;
 	-webkit-box-sizing: border-box;
@@ -108,4 +118,9 @@ footer{
 
 footer p{
   color: #787878;
-}
+}@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+ 
+@import '~mdb-angular-ui-kit/assets/scss/mdb.scss';
