@@ -10,10 +10,17 @@ export class DatediffServiceTsService {
   constructor(
   
   ) { }
+/* 
+
+3:05pm
+  new Date('Nov 11 2022 15:05:00 GMT+2')
+or
+
+new Date('Feb 28 2013 19:00:00 GMT-0500') */
 
 
 
-  calcDateDiff(endDay: Date = new Date("2022-11-05")): TimeComponents {
+  calcDateDiff(endDay: Date = new Date('Nov 5 2022 15:05:00 GMT+2')): TimeComponents {
     const dDay = endDay.valueOf();
 
     const milliSecondsInASecond = 1000;
