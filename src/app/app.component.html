@@ -1,78 +1,88 @@
 <div class="background-cover">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+    rel="stylesheet"
+    type="text/css"
+  />
 
   <div class="container">
-
     <hr class="hr" />
-
   </div>
 
   <div class="wrapper">
     <mdb-carousel [indicators]="true" [animation]="'fade'">
       <mdb-carousel-item>
-        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).webp" class="d-block w-100" alt="..." />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
+        <!--  src="~/assets/images/full-screen-image-3.jpg" -->
+        <img
+          src="../assets/images/picv.jpeg"
+          class="d-block w-100"
+          alt="..."
+          style="height: 430px; width: max-content"
+        />
+        <div class="carousel-caption d-none d-md-block"></div>
       </mdb-carousel-item>
       <mdb-carousel-item>
-        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).webp" class="d-block w-100" alt="..." />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+        <img
+          src="../assets/images/picv2.jpeg"
+          class="d-block w-100"
+          alt="..."
+          style="height: 430px; width: max-content"
+        />
+        <div class="carousel-caption d-none d-md-block"></div>
       </mdb-carousel-item>
       <mdb-carousel-item>
-        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).webp" class="d-block w-100" alt="..." />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
+        <img
+          src="../assets/images/pic7.jpeg"
+          class="d-block w-100"
+          alt="..."
+          style="height: 430px; width: max-content"
+        />
+        <div class="carousel-caption d-none d-md-block"></div>
+      </mdb-carousel-item>
+      <mdb-carousel-item>
+        <img
+          src="../assets/images/pic4.jpeg"
+          class="d-block w-100"
+          alt="..."
+          style="height: 430px; width: max-content"
+        />
+        <div class="carousel-caption d-none d-md-block"></div>
       </mdb-carousel-item>
     </mdb-carousel>
-
   </div>
-
 
   <section>
     <div class="wrapper">
-
-
-
-      <div id="countdown" *ngIf="(timeLeft$ | async) as t; else sorry">
+      <div id="countdown" *ngIf="timeLeft$ | async as t; else sorry">
         <div class="cd-box">
-          <p class="numbers days">{{t.daysToDday}}</p><br>
+          <p class="numbers days">{{ t.daysToDday }}</p>
+          <br />
           <p class="strings timeRefDays">Days</p>
         </div>
         <div class="cd-box">
-          <p class="numbers hours">{{t.hoursToDday}} </p><br>
+          <p class="numbers hours">{{ t.hoursToDday }}</p>
+          <br />
           <p class="strings timeRefHours">Hours</p>
         </div>
         <div class="cd-box">
-          <p class="numbers minutes">{{t.minutesToDday}}</p><br>
+          <p class="numbers minutes">{{ t.minutesToDday }}</p>
+          <br />
           <p class="strings timeRefMinutes">Minutes</p>
         </div>
         <div class="cd-box">
-          <p class="numbers seconds">{{t.secondsToDday}}</p><br>
+          <p class="numbers seconds">{{ t.secondsToDday }}</p>
+          <br />
           <p class="strings timeRefSeconds">Seconds</p>
         </div>
       </div>
       <!-- end div#countdown -->
 
-      <footer >
-
+      <footer>
         <p class="text-end">Cyber Factory &copy; 2022</p>
-       
       </footer>
-
     </div>
     <!-- end div.wrapper -->
   </section>
 </div>
 
-
-
-<ng-template #sorry>
-  Sorry, something went wrong...
-</ng-template>
+<ng-template #sorry> Sorry, something went wrong... </ng-template>
